@@ -12,7 +12,7 @@
   <!-- Pré-visualização para WhatsApp, Facebook, Telegram e LinkedIn -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Convite Vitória 15 anos" />
-  <meta property="og:title" content="Te convido para um dia incrível e inesquecível." />
+  <meta property="og:title" content="✨ Você foi convidado para o aniversário da Vitória!" />
   <meta property="og:description" content="Clique para abrir o convite interativo." />
   <meta property="og:url" content="https://juliasilvajesusj-eng.github.io/convite-vitoria/" />
   <meta property="og:image" content="https://juliasilvajesusj-eng.github.io/convite-vitoria/assets/preview.jpg" />
@@ -50,6 +50,7 @@
         <a class="hotspot presentes" aria-label="Abrir sugestão de presente" href="#presentes"></a>
         <a class="hotspot confirmar" target="_blank" rel="noopener" aria-label="Confirmar presença" href="#"></a>
         <a class="hotspot manual" aria-label="Abrir manual do convidado" href="#manual"></a>
+        <button id="backToEnvelope" class="back intro-back" type="button" aria-label="Voltar para a tela do envelope">Voltar</button>
       </div>
     </section>
 
@@ -57,15 +58,20 @@
       <div class="card-frame">
         <img src="assets/presentes.png" alt="Sugestão de presente" />
         <a class="hotspot pix" target="_blank" rel="noopener" aria-label="Acessar chave Pix" href="#"></a>
+        <button class="back" type="button" aria-label="Voltar ao convite">Voltar</button>
       </div>
     </section>
 
     <section id="manualPage" class="screen page">
       <div class="card-frame">
         <img src="assets/manual.png" alt="Manual do convidado" />
+        <button class="back" type="button" aria-label="Voltar ao convite">Voltar</button>
       </div>
     </section>
   </main>
+
+  
+<button id="floatingBackBtn" aria-label="Voltar página anterior">←</button>
 
   <script src="js/config.js"></script>
   <script src="js/app.js"></script>

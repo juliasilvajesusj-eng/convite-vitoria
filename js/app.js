@@ -17,3 +17,9 @@ document.querySelector('.presentes').addEventListener('click', e => { e.preventD
 document.querySelector('.manual').addEventListener('click', e => { e.preventDefault(); show(screens.manual); history.replaceState(null,'','#manual'); });
 document.querySelectorAll('.back').forEach(btn => btn.addEventListener('click', (e) => { if(e.currentTarget.classList.contains('intro-back')){show(screens.intro); history.replaceState(null,'','#');} else {show(screens.main); history.replaceState(null,'','#convite');}}));
 window.addEventListener('load', () => { if(location.hash === '#presentes') show(screens.presentes); if(location.hash === '#manual') show(screens.manual); });
+
+
+const floatingBack=document.getElementById('floatingBackBtn');
+if(floatingBack){
+ floatingBack.addEventListener('click',()=>history.back());
+}
